@@ -11,7 +11,7 @@
 
 .striscia1{
 
-    height: 80px;
+    height: 100px;
     background-color:  #009688;;
 }
 
@@ -99,18 +99,23 @@
     border: 0.1px;
     border-radius: 1px;
     width: 90%;
+    
    
 }
-
+/* BLOCCO DI SINISTA CON LA CHAT */
 .lista_chat{
     background-color:white;
 }
 
-/* BLOCCO DI SINISTA CON LA CHAT */
+.lista_chat li{
+    list-style: none;
+}
 
 blocco_chat{
     width: 100%;
 }
+
+/* BLOCCO DI DESTRA  */
 
 .utente_chat{
     display: flex;
@@ -133,7 +138,7 @@ blocco_chat{
     width: 100%;
     color:#B1B1B1;
     font-size: 30px;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .casella_scrittura input{

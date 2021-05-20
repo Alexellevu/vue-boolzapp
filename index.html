@@ -47,7 +47,9 @@
                     </div>
                     <!-- lista utenti e chat dinamica -->
                     <div class="lista_chat">
-                        
+                        <li v-for="nome in contacts" >{{nome.name}}</li><ul>
+                           
+                        </ul>
                     </div>
                 </nav>
                 <main>
@@ -56,7 +58,7 @@
                         <!-- sezione superiore con avatar -->
                     <div class="utente_chat">
                         <div id="utente_scelto">
-                            <div>ccccccc</div>
+                            <div>prova</div>
                         </div>
                         <div class="pulsanti_utente_scelto">
                             <i class="fas fa-search"></i>
@@ -85,7 +87,7 @@
         <div class="sfondo1"></div>
     </div>
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script src="/assets/main.js"></script>
 </body>
 </html>
