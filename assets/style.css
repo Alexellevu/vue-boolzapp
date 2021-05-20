@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    position: relative;
+}
+
+.striscia1{
+
+    height: 80px;
+    background-color:  #009688;;
+}
+
+.sfondo1{
+    height: 100vh ;
+    background-color: #D7DBD7;
+}
+
+.finestra{
+    height: 90vh;
+    width: 85vw;
+    background-color: rgb(243, 24, 24);
+    position: absolute;
+    top: 3%;
+    left: 8%;
+    
+}
