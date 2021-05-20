@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+/* CONTENITORE PRINCIPALE */
 .container{
     position: relative;
 }    
@@ -19,6 +20,7 @@
     background-color: #D7DBD7;
 }
 
+/* FINESTRA DOVE SI SVILUPPA BOOLCHAT */
 .finestra{
     height: 90vh;
     width: 85vw;
@@ -30,9 +32,11 @@
     left: 8%;
 }
 
+/* NAVBAR LATERALE */
 .finestra nav{
-    width: 30%;
+    width: 30vw;
 }
+
 
 .utente_proprietario{
     display: flex;
@@ -46,7 +50,8 @@
     color:#B1B1B1;
     display: flex;
     justify-content: space-around;
-    width: 30%;
+    width: 40%;
+    font-size: 25px;
 }
 .logo_utente{
     display: flex;
@@ -63,12 +68,85 @@
 .attiva_notifiche{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background-color: #8EDAFC;
+    height: 12%;
 }
 
 .attiva_notifiche i{
     background-color: white;
-    padding: 7px;
-    border-radius: 20px;
+    padding: 15px 12px;
+    border-radius: 40px;
     color:#8EDAFC;
+    font-size: 1.5rem;
 }
+
+.campana{
+    margin-right: 10px;
+}
+
+.attiva_notifiche h4{
+    font-weight: lighter;
+}
+
+.ricerca{
+    background-color: white;
+    background-color: lightgray;
+    color:#B1B1B1;
+}
+.ricerca input{
+    border: 0.1px;
+    border-radius: 1px;
+    width: 90%;
+   
+}
+
+.lista_chat{
+    background-color:white;
+}
+
+/* BLOCCO DI SINISTA CON LA CHAT */
+
+blocco_chat{
+    width: 100%;
+}
+
+.utente_chat{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 800px;
+}
+
+.chat{
+    background-image: url(../img/mine.jpg);
+    height: 75vh;
+}
+
+.casella_scrittura{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    color:#B1B1B1;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.casella_scrittura input{
+    height: 50px;
+    width: 85%;
+    border:none ;
+    border-radius: 5px;
+    
+}
+
+
+
+/* .pulsanti_utente_scelto{
+    display: flex;
+    justify-content: space-between; 
+} */

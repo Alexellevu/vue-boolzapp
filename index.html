@@ -10,9 +10,13 @@
     <title>Boolzap</title>
 </head>
 <body>
-    <div class="container">
+    <!-- container principale -->
+    <div class="container" id="app">
+        <!-- finestra di boolzap -->
         <div class="finestra">
+                <!-- barra di navigazione a sinistra -->
                 <nav>
+                    <!-- blocco che identifica l'account dell'utente -->
                     <div class="utente_proprietario">
                         <div class="logo_utente">
                             <img src="./img/avatar_io.jpg" alt="">
@@ -26,29 +30,58 @@
                         </div>
                      
                     </div>
+                    <!-- blocco dove si attivano le notifiche -->
                     <div class="attiva_notifiche">
-                        <i class="fas fa-bell-slash"></i>
+                        <span class="campana">
+                            <i class="fas fa-bell-slash"></i>
+                        </span> 
                         <span>
                             <h4>Ricevi notifiche di nuovi messagi</h4>
-                        <a href="">Attiva notifiche desktop</a>
-                    </span>
-                        
-                        
+                            <a href="">Attiva notifiche desktop</a>
+                        </span>
+                     </div>
+                     <!-- sezione ricerca dei contatti -->
+                     <div class="ricerca">
+                         <span><i class="fas fa-search"></i>
+                            <input type="text" placeholder="cerca o inizia una nuova chat"></span>
+                    </div>
+                    <!-- lista utenti e chat dinamica -->
+                    <div class="lista_chat">
                         
                     </div>
-                    <div class="lista_chat"></div>
                 </nav>
                 <main>
-                    <div class="utente_chat"></div>
+                    <!-- sezione che identifica l'utente con cui si sta chattando -->
+                    <div class="blocco_chat">
+                        <!-- sezione superiore con avatar -->
+                    <div class="utente_chat">
+                        <div id="utente_scelto">
+                            <div>ccccccc</div>
+                        </div>
+                        <div class="pulsanti_utente_scelto">
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-paperclip"></i>
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                    <!-- blocco della chat -->
                     <div class="chat"></div>
-                    <div class="casella_chat"></div>
 
+
+                    <div class="casella_scrittura">
+                        <i class="far fa-smile"></i>
+                        <input type="text" placeholder="Scrivi un messaggio">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    </div>
                 </main>
 
         </div>
         
+        <!-- blocco colorato superioe -->
         <div class="striscia1"></div>
         
+        <!-- blocco colorato inferiore -->
         <div class="sfondo1"></div>
     </div>
 
