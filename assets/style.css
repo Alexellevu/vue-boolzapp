@@ -6,7 +6,7 @@
 
 .container{
     position: relative;
-}
+}    
 
 .striscia1{
 
@@ -22,9 +22,53 @@
 .finestra{
     height: 90vh;
     width: 85vw;
-    background-color: rgb(243, 24, 24);
+    background-color:lightcyan;
     position: absolute;
+    display: flex;
+    flex-direction: row;
     top: 3%;
     left: 8%;
-    
+}
+
+.finestra nav{
+    width: 30%;
+}
+
+.utente_proprietario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-right: 0.2px solid gray;
+}
+
+.pulsanti_utente{
+    color:#B1B1B1;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.logo_utente{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+
+.logo_utente img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50px;
+}
+.attiva_notifiche{
+    display: flex;
+    flex-direction: row;
+    background-color: #8EDAFC;
+}
+
+.attiva_notifiche i{
+    background-color: white;
+    padding: 7px;
+    border-radius: 20px;
+    color:#8EDAFC;
 }
