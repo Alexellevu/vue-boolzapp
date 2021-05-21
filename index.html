@@ -47,11 +47,13 @@
                     </div>
                     <!-- lista utenti e chat dinamica -->
                     <div class="lista_chat">
-                        <li v-for="nome in contacts" >{{nome.name}}</li><ul>
+                        <li v-for="nome in contacts" :key="nome.nome" >{{nome.name}}</li><ul>
                            
                         </ul>
                     </div>
                 </nav>
+                
+                
                 <main>
                     <!-- sezione che identifica l'utente con cui si sta chattando -->
                     <div class="blocco_chat">
