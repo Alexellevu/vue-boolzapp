@@ -99,9 +99,8 @@
     border: 0.1px;
     border-radius: 1px;
     width: 90%;
-    
-   
 }
+
 /* BLOCCO DI SINISTA CON LA CHAT */
 .lista_chat{
     background-color:white;
@@ -163,7 +162,4 @@ blocco_chat{
 
 
 
-/* .pulsanti_utente_scelto{
-    display: flex;
-    justify-content: space-between; 
-} */
+
