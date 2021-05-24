@@ -49,7 +49,8 @@
                     <div class="lista_chat">
                        <ul>
                        
-                        <li  v-for="(contact, index) in contacts" @click="cambia_utente(index)"> {{ contact.name }} </li>
+                        <li  v-for="(contact, index) in contacts" @click="cambia_utente(index)">
+                            <img :src="./img/avatar"+ contacts[index].avatar +".jpg" alt=""> {{ contact.name }} </li>
                         </ul>
                     </div>
                 </nav>
@@ -63,6 +64,7 @@
                         <div id="utente_scelto">
                             <!-- CASELLA UTENTE SELEZIONATO -->
                         <div > {{ contacts[utente_attivo].name }}  </div>
+                        
                         </div> 
                         <div class="pulsanti_utente_scelto">
                             <i class="fas fa-search"></i>

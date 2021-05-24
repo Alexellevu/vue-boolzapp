@@ -101,6 +101,11 @@
     width: 90%;
 }
 
+.lista_chat img{
+    width: 60px;
+    border-radius: 40px;
+}
+
 /* BLOCCO DI SINISTA CON LA CHAT */
 .lista_chat{
     background-color:white;
