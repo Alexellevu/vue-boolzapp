@@ -4,13 +4,11 @@
 
 const app = new Vue({
     el:'#app',
-    
+
     data: {
 
-        prova:'ciao',
-        
-        
-        contacts: [
+        utente_attivo:0,
+         contacts: [
             {
                 name: 'Michele',
                 avatar: '_1',
@@ -31,7 +29,7 @@ const app = new Vue({
                         text: 'Tutto fatto!',
                         status: 'received'
                     }
-                ],
+                ]
             },
             {
                 name: 'Fabio',
@@ -53,9 +51,8 @@ const app = new Vue({
                         text: 'Mi piacerebbe ma devo andare a fare la spesa.',
                         status: 'sent'
                     }
-                ],
+                ]
             },
-        ​   
             {
                 name: 'Samuele',
                 avatar: '_3',
@@ -76,7 +73,7 @@ const app = new Vue({
                         text: 'Ah scusa!',
                         status: 'received'
                     }
-                ],
+                ]
             },
             {
                 name: 'Luisa',
@@ -93,12 +90,21 @@ const app = new Vue({
                         text: 'Si, ma preferirei andare al cinema',
                         status: 'received'
                     }
-                ],
-            },
-        ]        
-    },
+                ]
+            }
+        ]      
+    }, 
     
     methods:{
         
+        cambia_utente(index){
+
+            console.log(index);
+            
+            return this.utente_attivo = index;
+           
+         
+        }
+       
     }
 }) 

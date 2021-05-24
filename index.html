@@ -47,8 +47,9 @@
                     </div>
                     <!-- lista utenti e chat dinamica -->
                     <div class="lista_chat">
-                        <li v-for="nome in contacts" :key="nome.nome" >{{nome.name}}</li><ul>
-                           
+                       <ul>
+                       
+                        <li  v-for="(contact, index) in contacts" @click="cambia_utente(index)"> {{ contact.name }} </li>
                         </ul>
                     </div>
                 </nav>
@@ -58,9 +59,10 @@
                     <!-- sezione che identifica l'utente con cui si sta chattando -->
                     <div class="blocco_chat">
                         <!-- sezione superiore con avatar -->
-                    <div class="utente_chat">
+                    <div class="utente_chat" >
                         <div id="utente_scelto">
-                            <div>prova</div>
+                            <!-- CASELLA UTENTE SELEZIONATO -->
+                        <div :class="cambia_utente">  {{contacts.index}} </div>
                         </div>
                         <div class="pulsanti_utente_scelto">
                             <i class="fas fa-search"></i>
@@ -90,6 +92,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+
     <script src="./assets/main.js"></script>
 </body>
 </html>
