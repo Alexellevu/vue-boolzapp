@@ -122,6 +122,16 @@ blocco_chat{
     justify-content: space-between;
     flex-direction: row;
     width: 800px;
+    color:#B1B1B1;
+}
+
+.pulsanti_utente_scelto{
+    width: 15%;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    
 }
 
 .chat{
@@ -129,6 +139,8 @@ blocco_chat{
     height: 75vh;
 }
 
+
+/* CASELLA PER INSERIRE IL TESTO NELLA CHAT */
 .casella_scrittura{
     display: flex;
     align-items: center;
