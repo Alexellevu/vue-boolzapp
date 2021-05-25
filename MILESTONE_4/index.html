@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Boolzap</title>
+</head>
+<body>
+    <!-- container principale -->
+    <div class="container" id="app">
+        <!-- finestra di boolzap -->
+        <div class="finestra">
+                <!-- barra di navigazione a sinistra -->
+                <nav>
+                    <!-- blocco che identifica l'account dell'utente -->
+                    <div class="utente_proprietario">
+                        <div class="logo_utente">
+                            <img src="./img/avatar_io.jpg" alt="">
+                            <span>Nome Utente</span>
+                        </div>
+                        
+                        <div class="pulsanti_utente">
+                            <i class="fas fa-circle-notch"></i>
+                            <i class="fas fa-comment-alt"></i>
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                     
+                    </div>
+                    <!-- blocco dove si attivano le notifiche -->
+                    <div class="attiva_notifiche">
+                        <span class="campana">
+                            <i class="fas fa-bell-slash"></i>
+                        </span> 
+                        <span>
+                            <h4>Ricevi notifiche di nuovi messagi</h4>
+                            <a href="">Attiva notifiche desktop</a>
+                        </span>
+                     </div>
+                     <!-- sezione ricerca dei contatti -->
+                     <div class="ricerca">
+                         <span><i class="fas fa-search"></i>
+                            <input type="text" placeholder="cerca o inizia una nuova chat"></span>
+                    </div>
+                    <!-- lista utenti e chat dinamica -->
+                    <div class="lista_chat">
+                       <ul>
+                       
+                        <li  v-for="(contact, index) in contacts" @click="cambia_utente(index)">
+                            <img :src="'./img/avatar'+ contact.avatar +'.jpg'" alt=""> {{ contact.name }} </li>
+                        </ul>
+                    </div>
+                </nav>
+                
+                
+                <main>
+                    <!-- sezione che identifica l'utente con cui si sta chattando -->
+                    <div class="blocco_chat">
+                        <!-- sezione superiore con avatar -->
+                    <div class="utente_chat" >
+                        <div class="utente_scelto">
+                            <!-- CASELLA UTENTE SELEZIONATO -->
+                        <div > <img :src="'./img/avatar'+ contacts[utente_attivo].avatar +'.jpg'" alt=""> {{ contacts[utente_attivo].name }}  </div>
+                        
+                        </div> 
+                        <div class="pulsanti_utente_scelto">
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-paperclip"></i>
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                    <!-- blocco della chat -->
+                    <div class="chat"></div>
+
+
+                    <div class="casella_scrittura">
+                        <i class="far fa-smile"></i>
+                        <input type="text" placeholder="Scrivi un messaggio">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    </div>
+                </main>
+
+        </div>
+        
+        <!-- blocco colorato superioe -->
+        <div class="striscia1"></div>
+        
+        <!-- blocco colorato inferiore -->
+        <div class="sfondo1"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+
+    <script src="./assets/main.js"></script>
+</body>
+</html>

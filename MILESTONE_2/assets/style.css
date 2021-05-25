@@ -101,12 +101,17 @@
     width: 90%;
 }
 
-.lista_chat img{
+
+.lista_chat img {
     width: 60px;
     border-radius: 40px;
 }
 
-/* BLOCCO DI SINISTA CON LA CHAT */
+
+
+/* BLOCCO DI SINISTRA CON LA CHAT */
+
+
 .lista_chat{
     background-color:white;
 }
@@ -120,12 +125,17 @@ blocco_chat{
 }
 
 /* BLOCCO DI DESTRA  */
+.utente_scelto img{
+    width: 60px;
+    border-radius: 40px;
+}
 
 .utente_chat{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     width: 800px;
+    height: 60%;
     color:#B1B1B1;
 }
 
@@ -155,6 +165,13 @@ blocco_chat{
     color:#B1B1B1;
     font-size: 30px;
     padding-top: 10px;
+}
+
+.messaggio_utente{
+    background-color:green;
+}
+.messaggio_risp{
+    background-color: white;
 }
 
 .casella_scrittura input{
