@@ -22,7 +22,7 @@
 
 /* FINESTRA DOVE SI SVILUPPA BOOLCHAT */
 .finestra{
-    height: 90vh;
+    height: 100vh;
     width: 85vw;
     background-color:lightcyan;
     position: absolute;
@@ -35,8 +35,6 @@
 /* NAVBAR LATERALE */
 .finestra nav{
     width: 30vw;
-    
-    
 }
 
 
@@ -94,13 +92,17 @@
 
 .ricerca{
     background-color: white;
-    background-color: lightgray;
+    background-color: rgb(243, 235, 235);
     color:#B1B1B1;
 }
 .ricerca input{
     border: 0.1px;
-    border-radius: 1px;
+    border-radius: 5px;
     width: 90%;
+}
+
+.lista_chat{
+    overflow-y:scroll;
 }
 
 
@@ -151,6 +153,16 @@ blocco_chat{
 }
 
 /* BLOCCO DI DESTRA  */
+.utente_scelto{
+    position: relative;
+}
+
+.utente_scelto span{
+    position: absolute;
+    top:40%;
+    color: black;
+}
+
 .utente_scelto img{
     width: 76px;
     border-radius: 40px;
@@ -176,14 +188,15 @@ blocco_chat{
     margin-right: 15px;
     
 }
-
+/* CASELLA PER INSERIRE IL TESTO NELLA CHAT */
 .chat{
     background-image: url(../img/mine.jpg);
     height: 75vh;
+    overflow-y: scroll;
 }
 
 
-/* CASELLA PER INSERIRE IL TESTO NELLA CHAT */
+
 .casella_scrittura{
     display: flex;
     align-items: center;
