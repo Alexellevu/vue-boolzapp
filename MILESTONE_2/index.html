@@ -73,14 +73,12 @@
                         </div>
                     </div>
                     <!-- blocco della chat -->
-                    <div class="chat" v-for="message in contacts[utente_attivo].messages" >
-                        <div class="messaggio_altro_utente"  > <!-- v-if=:"contacts.messages.status"=='sent' -->
+                    <div class="chat">
+                        <div  v-for="message in contacts[utente_attivo].messages" :class="(message.status=='sent')? 'messaggio_utente_proprietario':'messaggio_altro_utente'" >
+            
+                            {{message.date}} -  {{message.text}}
 
-                            {{contacts[utente_attivo].messages}}
                         </div>
-                       
-                        
-                        
                     </div>
 
 
