@@ -132,7 +132,7 @@
 }
 
 
-blocco_chat{
+.blocco_chat{
     width: 100%;
     
 }
@@ -148,13 +148,20 @@ blocco_chat{
 
 .ricerca input{
     height: 40px;
-    
     text-align: center;
 }
 
 /* BLOCCO DI DESTRA  */
+
+
 .utente_scelto{
     position: relative;
+}
+.utente_scelto p{
+    position: absolute;
+    bottom: 10px;
+    left: 75px;
+    width: 150px;
 }
 
 .utente_scelto span{
@@ -221,6 +228,7 @@ blocco_chat{
     width: 85%;
     border:none ;
     border-radius: 5px;
+    padding-left: 10px;
     
 }
 
