@@ -49,8 +49,9 @@
                     <div class="lista_chat">
                        <ul>
                        
-                        <li  v-for="(contact, index) in contacts" @click="cambia_utente(index)">
-                            <img :src="'./img/avatar'+ contact.avatar +'.jpg'" alt=""> <span>{{ contact.name }}</span>  </li>
+                            <li  v-for="(contact, index) in contacts" @click="cambia_utente(index)">
+                            <img :src="'./img/avatar'+ contact.avatar +'.jpg'" alt=""> <span>{{ contact.name }}</span>  
+                            </li>
                         </ul>
                     </div>
                 </nav>
@@ -76,7 +77,7 @@
                     <div class="chat">
                         <div  v-for="message in contacts[utente_attivo].messages" :class="(message.status=='sent')? 'messaggio_utente_proprietario':'messaggio_altro_utente'" >
             
-                            {{message.date}} -  {{message.text}}
+                            {{message.text}} <br> {{message.date}} 
 
                         </div>
                     </div>

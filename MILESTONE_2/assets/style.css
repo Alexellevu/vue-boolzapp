@@ -198,11 +198,31 @@
 /* CASELLA PER INSERIRE IL TESTO NELLA CHAT */
 .chat{
     background-image: url(../img/mine.jpg);
-    height: 75vh;
+    height:75vh;
     overflow-y: scroll;
 }
 
 
+
+.messaggio_utente_proprietario{
+    background-color:lightgreen;
+    width: 40%;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: end;
+    margin-left: 25rem;
+    
+}
+.messaggio_altro_utente {
+    background-color:white;
+    width: 40%;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 4rem;
+   
+}
 
 .casella_scrittura{
     display: flex;
@@ -214,13 +234,6 @@
     color:#B1B1B1;
     font-size: 30px;
     padding-top: 10px;
-}
-
-.messaggio_utente_proprietario{
-    background-color:green;
-}
-.messaggio_altro_utente {
-    background-color:red;
 }
 
 .casella_scrittura input{
