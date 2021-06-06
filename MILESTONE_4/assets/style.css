@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* CONTENITORE PRINCIPALE */
+.container{
+    position: relative;
+}    
+
+.striscia1{
+
+    height: 100px;
+    background-color:  #009688;;
+}
+
+.sfondo1{
+    height: 100vh ;
+    background-color: #D7DBD7;
+}
+
+/* FINESTRA DOVE SI SVILUPPA BOOLCHAT */
+.finestra{
+    height: 100vh;
+    width: 85vw;
+    background-color:lightcyan;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 3%;
+    left: 8%;
+}
+
+/* NAVBAR LATERALE */
+.finestra nav{
+    width: 30vw;
+}
+
+
+.utente_proprietario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-right: 0.2px solid gray;
+}
+
+.pulsanti_utente{
+    color:#B1B1B1;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    font-size: 25px;
+}
+.logo_utente{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+
+.logo_utente img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50px;
+}
+.attiva_notifiche{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #8EDAFC;
+    height: 12%;
+}
+
+.attiva_notifiche i{
+    background-color: white;
+    padding: 15px 12px;
+    border-radius: 40px;
+    color:#8EDAFC;
+    font-size: 1.5rem;
+}
+
+.campana{
+    margin-right: 10px;
+}
+
+.attiva_notifiche h4{
+    font-weight: lighter;
+}
+
+.ricerca{
+    background-color: white;
+    background-color: rgb(243, 235, 235);
+    color:#B1B1B1;
+}
+.ricerca input{
+    border: 0.1px;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.lista_chat{
+    overflow-y:scroll;
+}
+
+
+.lista_chat img {
+    width: 60px;
+    border-radius: 40px;
+}
+
+
+
+/* BLOCCO DI SINISTRA CON LA CHAT */
+
+
+.lista_chat{
+    background-color:white;
+    position: relative;
+    padding: 5px;
+    
+}
+
+.lista_chat li{
+    list-style: none;
+}    
+.lista_chat span{
+    position: absolute;
+    left: 5rem;  
+}
+
+
+.blocco_chat{
+    width: 100%;
+    
+}
+.ricerca{
+    position:relative;
+    padding: 7px;
+}
+
+.ricerca i{
+    position: relative;
+    left:2rem;
+}
+
+.ricerca input{
+    height: 40px;
+    text-align: center;
+}
+
+/* BLOCCO DI DESTRA  */
+
+
+.utente_scelto{
+    position: relative;
+}
+.utente_scelto p{
+    position: absolute;
+    bottom: 10px;
+    left: 75px;
+    width: 150px;
+}
+
+.utente_scelto span{
+    position: absolute;
+    top:40%;
+    color: black;
+}
+
+.utente_scelto img{
+    width: 76px;
+    border-radius: 40px;
+    padding: 5px;
+}
+
+.utente_chat{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 800px;
+    height: 60%;
+    color:#B1B1B1;
+}
+
+.pulsanti_utente_scelto{
+    width: 15%;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    margin-right: 15px;
+    
+}
+/* CASELLA PER INSERIRE IL TESTO NELLA CHAT */
+.chat{
+    background-image: url(../img/mine.jpg);
+    height:75vh;
+    overflow-y: scroll;
+}
+
+
+
+.messaggio_utente_proprietario{
+    background-color:lightgreen;
+    width: 40%;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: end;
+    margin-left: 25rem;
+    
+}
+.messaggio_altro_utente {
+    background-color:white;
+    width: 40%;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 4rem;
+   
+}
+
+.casella_scrittura{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    color:#B1B1B1;
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+.casella_scrittura input{
+    height: 50px;
+    width: 85%;
+    border:none ;
+    border-radius: 5px;
+    padding-left: 10px;
+    
+}
+
+
+
+

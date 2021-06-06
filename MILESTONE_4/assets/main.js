@@ -95,6 +95,7 @@ const app = new Vue({
             }
         ],
         nuovo_messaggio:'' ,
+        ricercachat:[]
             
     }, 
     
@@ -126,8 +127,12 @@ const app = new Vue({
                     status: 'recived'
                   });
             }, 1000)
-        }
+        },
 
+        ricerca(){
+            this.ricercachat.push(document.getElementById('ricercaC'));
+            console.log(this.ricercachat);
+        }
        
     }
 
