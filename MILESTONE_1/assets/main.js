@@ -98,12 +98,7 @@ const app = new Vue({
     methods:{
         
         cambia_utente(index){
-
-            
-            
             return this.utente_attivo = index;
-           
-         
         }
        
     }

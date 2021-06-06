@@ -93,7 +93,8 @@ const app = new Vue({
                     }
                 ]
             }
-        ]      
+        ],
+        nuovo_messaggio:''      
     }, 
     
     methods:{
@@ -104,12 +105,14 @@ const app = new Vue({
        
          aggiungi_messaggio(){
 
-            this.contacts[this.utente_attivo].messages.push({
-                date:dayjs().format('DD/MM/YYYY HH:mm:ss') ,
-                testo :this.nuovo_messaggio,
+            console.log(this.nuovo_messaggio);
+
+             this.contacts[this.utente_attivo].messages.push({
+                date: new Date(),
+                text :this.nuovo_messaggio,
                 status: 'sent'
-            });
-            this.nuovo_messaggio ='';
+              } );
+            this.nuovo_messaggio =''; 
             
         }
     }

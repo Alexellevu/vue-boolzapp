@@ -10,7 +10,7 @@
     <title>Boolzap</title>
 </head>
 <body>
-    <!-- container principale -->
+    <!-- container principale --> 
     <div class="container" id="app">
         <!-- finestra di boolzap -->
         <div class="finestra">
@@ -82,15 +82,15 @@
                         </div>
 
                         <div class="nuovo_messaggio">
-                            {{ nuovo_messaggio}}
+                            
                         </div>
 
                     </div>
 
 
-                    <div class="casella_scrittura">
+                    <div class="casella_scrittura ">
                         <i class="far fa-smile"></i>
-                        <input type="text" placeholder="Scrivi un messaggio" v-model="nuovo_messaggio">
+                        <input class="utente_proprietario" type="text" placeholder="Scrivi un messaggio" v-model="nuovo_messaggio" @keyup.enter="aggiungi_messaggio">
                         <i class="fas fa-microphone"></i>
                     </div>
                     </div>
