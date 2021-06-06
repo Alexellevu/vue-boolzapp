@@ -95,7 +95,7 @@ const app = new Vue({
             }
         ],
         nuovo_messaggio:'' ,
-        ricercachat:[]
+        ricercachat:''
             
     }, 
     
@@ -129,9 +129,21 @@ const app = new Vue({
             }, 1000)
         },
 
-        ricerca(){
-            this.ricercachat.push(document.getElementById('ricercaC'));
-            console.log(this.ricercachat);
+        ricercaContatto(ricercachat){
+            
+            const ricercaMinuscolo = ricercachat.toLowerCase();
+            console.log(ricercaMinuscolo);
+            this.contacts.forEach((contact) => {
+                const nomeMinuscolo = contact.name.toLowerCase();
+                if(nomeMinuscolo.includes(ricercaMinuscolo)){
+                    contact.visible = true;
+                }else{
+                    contact.visible = false;
+                    }
+                
+
+                /* console.log(nomeMinuscolo.includes(ricercaMinuscolo), contact.name); */
+            })
         }
        
     }
