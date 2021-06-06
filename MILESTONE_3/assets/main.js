@@ -108,12 +108,23 @@ const app = new Vue({
             console.log(this.nuovo_messaggio);
 
              this.contacts[this.utente_attivo].messages.push({
-                date: new Date(),
+                date: new Date().toLocaleString(),
                 text :this.nuovo_messaggio,
                 status: 'sent'
               } );
             this.nuovo_messaggio =''; 
+
+            this.risposta();
             
+        },
+        risposta(){
+            setTimeout(()=>{
+                this.contacts[this.utente_attivo].messages.push({
+                    date: new Date().toLocaleString(),
+                    text :'ok',
+                    status: 'recived'
+                  });
+            }, 1000)
         }
     }
 
